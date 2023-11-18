@@ -23,21 +23,7 @@ struct ContentView: View {
                     .font(.system(size: 50))
                     .foregroundColor(.white)
             }
-            
-            TextField("Enter City Name", text: self.$viewModel.city){
-                self.viewModel.search()
-            }
-            .font(.title)
-            .padding()
-            .fixedSize()
 
-            TextField("Enter City Name", text: self.$viewModel.city){
-                self.viewModel.search()
-            }
-            .font(.title)
-            .padding()
-            .fixedSize()
-            
             TextField("Enter City Name", text: self.$viewModel.city){
                 self.viewModel.search()
             }
