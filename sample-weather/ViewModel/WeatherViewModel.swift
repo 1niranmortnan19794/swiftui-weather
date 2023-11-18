@@ -10,7 +10,7 @@ import Combine
 
 
 class WeatherViewModel: ObservableObject{
-    et weatherService: WeatherService
+    let weatherService: WeatherService
     var city: String = ""
     @Published var weather = WeatherResponse()
     @Published var loading = false
