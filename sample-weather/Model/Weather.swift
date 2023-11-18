@@ -8,10 +8,7 @@
 
 import Foundation
 
-struct WeatherResponse: Decodable{
-    var main: Weather?
-    var weather: [WeatherModel]?
-}
+
 struct WeatherResponse: Decodable{
     var main: Weather?
     var weather: [WeatherModel]?
