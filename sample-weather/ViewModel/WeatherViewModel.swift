@@ -14,6 +14,8 @@ class WeatherViewModel: ObservableObject{
     var city: String = ""
     @Published var weather = WeatherResponse()
     @Published var loading = false
+    @Published var weather = WeatherResponse()
+    @Published var loading = false
     var temeture: String{
         get{
             guard let temp = self.weather.main?.temp else {return ""}
