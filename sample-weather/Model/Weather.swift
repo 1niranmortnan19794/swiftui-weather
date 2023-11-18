@@ -40,6 +40,15 @@ struct WeatherModel: Decodable{
     var main: String?
 }
 
+struct WeatherResponse: Decodable{
+    var main: Weather?
+    var weather: [WeatherModel]?
+}
+
+struct WeatherResponse: Decodable{
+    var main: Weather?
+    var weather: [WeatherModel]?
+}
 
 struct WeatherResponse: Decodable{
     var main: Weather?
