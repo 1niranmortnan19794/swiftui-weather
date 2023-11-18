@@ -11,6 +11,7 @@ import Combine
 
 class WeatherViewModel: ObservableObject{
     let weatherService: WeatherService
+    et weatherService: WeatherService
     var city: String = ""
     @Published var weather = WeatherResponse()
     @Published var loading = false
