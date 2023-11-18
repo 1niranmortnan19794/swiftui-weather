@@ -30,6 +30,13 @@ struct ContentView: View {
             .font(.title)
             .padding()
             .fixedSize()
+
+            TextField("Enter City Name", text: self.$viewModel.city){
+                self.viewModel.search()
+            }
+            .font(.title)
+            .padding()
+            .fixedSize()
             
             if self.viewModel.loading {
                 ProgressView().progressViewStyle(CircularProgressViewStyle(tint: .white))
